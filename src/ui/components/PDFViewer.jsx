@@ -2,10 +2,9 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf';
 
 // Configure worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = '../../../public/pdf.worker.js';
 
 // Add electron import
-const { ipcRenderer } = window.require('electron');
 
 function IconButton({ onClick, disabled, title, className, children }) {
   return (

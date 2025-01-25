@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import PDFViewer from './components/PDFViewer';
-const { ipcRenderer } = window.require('electron');
+
 
 // File type icons component
 const FileIcon = ({ type }) => {
