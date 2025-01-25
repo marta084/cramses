@@ -1,0 +1,18 @@
+{
+  "appId": "com.shiv.react-electron",
+  "files": ["electron", "dist"],
+  "extraResources": [ "dist/assets"],
+  "icon": "./154346847.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"],
+    "certificateFile": "C:\\Users\\martv\\Desktop\\electron\\cert.pfx",
+    "certificatePassword": "102030"
+  }
+}
