@@ -282,7 +282,7 @@ function PDFViewer({ pdfUrl, filePath, onClose }) {
 
     try {
       // Use the actual file path for sharing
-      const result = await ipcRenderer.invoke('share-file', filePath);
+      const result = await window.electron.ipcInvoke('share-file', filePath);
       
       if (!result.success) {
         throw new Error(result.error || 'Failed to share file');

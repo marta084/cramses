@@ -41,7 +41,7 @@ function App() {
 
   const handleFileOpen = async () => {
     try {
-      const filePath = await ipcRenderer.invoke('open-file-dialog');
+      const filePath = await window.electron.ipcInvoke('open-file-dialog');
       if (filePath) {
         await loadMsgFile(filePath);
       }
@@ -260,19 +260,7 @@ function App() {
                       </div>
                       
                       <div className="flex-1 overflow-auto p-4">
-                        {selectedAttachment.type === 'image' ? (
-                          <img
-                            src={selectedAttachment.previewUrl}
-                            alt={selectedAttachment.fileName}
-                            className="max-h-[70vh] mx-auto"
-                          />
-                        ) : (
-                          <PDFViewer 
-                            pdfUrl={selectedAttachment.previewUrl}
-                            filePath={selectedAttachment.tempPath}
-                            onClose={() => setSelectedAttachment(null)}
-                          />
-                        )}
+
                       </div>
                     </div>
                   </div>
