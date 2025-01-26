@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    "types": ["./types", "./src/custom-types.d.ts"],
+    "types": ["./types", "./types.d.ts"],
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
