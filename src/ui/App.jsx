@@ -1,16 +1,34 @@
-import React from 'react';
+import {useCallback, useEffect, useState} from "react";
+import reactLogo from "./assets/react.svg";
+import electronLogo from "./assets/electron.png";
+import "./App.css";
+
 
 
 function App() {
-  
 
-  return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-4xl mx-auto">
+/*  useEffect(() => {
+    const unsub = window.electron.subscribeStatistics((stats) => {
+      // logging the data came from electron backend
+      console.log(stats)
+    });
+    return unsub;
+   }, []);*/
 
-      </div>
-    </div>
-  );
+
+
+    return (
+        <div className="min-h-screen bg-gray-100 p-6">
+test
+
+        </div>
+    );
+
+
+
+
 }
 
 export default App;
+
+
