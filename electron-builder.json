@@ -2,7 +2,7 @@
     "appId": "com.shiv.react-electron",
     "files": ["dist-electron", "dist-react"],
     "extraResources": ["dist-electron/preload.cjs", "src/assets/**"],
-    "icon": "./desktopIconImage.png",
+    "icon": "./154346847.jpg",
     "mac": {
       "target": "dmg"
     },
