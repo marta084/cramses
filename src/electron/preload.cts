@@ -1,7 +1,6 @@
 const electron = require('electron');
 
 electron.contextBridge.exposeInMainWorld('electron', {
-  ipcInvoke: (channel, args) => electron.ipcRenderer.invoke(channel, args),
   subscribeStatistics: (callback) =>
     ipcOn('statistics', (stats) => {
       callback(stats);

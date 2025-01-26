@@ -1,8 +1,8 @@
 {
-    "appId": "com.shiv.react-electron",
+    "appId": "com.macmsgviewer",
     "files": ["dist-electron", "dist-react"],
     "extraResources": ["dist-electron/preload.cjs", "src/assets/**"],
-    "icon": "./desktopIconImage.png",
+    "icon": "./154346847.png",
     "mac": {
       "target": "dmg"
     },
@@ -11,6 +11,8 @@
       "category": "Utility"
     },
     "win": {
-      "target": ["portable", "msi"]
+      "target": ["portable", "msi"],
+      "certificateFile": "C:\\Users\\martv\\Desktop\\cramses\\cert.pfx",
+      "certificatePassword": "102030"
     }
   }
